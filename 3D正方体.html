@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#aa {
+				margin: 100px auto;
+				width: 200px;
+				height: 200px;
+				transform-style: preserve-3d;
+				position: relative;
+				transform: rotateX(-15deg) rotateY(45deg);
+				animation: name 6s infinite linear;
+			}
+
+			.bb {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				left: 0;
+				right: 0;
+				background-color: rgba(232, 222, 45, 0.6);
+			}
+
+			.qian {
+				transform: translateZ(50px);
+				background-color: rgba(23, 22, 4, 0.6);
+			}
+
+			.hou {
+				transform: translateZ(-50px);
+				background-color: rgba(23, 122, 56, 0.6);
+			}
+
+			.zuo {
+				transform: rotateY(270deg) translateZ(-50px);
+				background-color: rgba(223, 122, 74, 0.6);
+
+			}
+
+			.you {
+				transform: rotateY(270deg) translateZ(50px);
+				background-color: rgba(13, 22, 254, 0.6);
+			}
+
+			.shang {
+				transform: rotateX(270deg) translateZ(-50px);
+				background-color: rgba(223, 12, 144, 0.9);
+			}
+
+			.xia {
+				transform: rotateX(270deg) translateZ(50px);
+				background-color: rgba(23, 252, 144, 0.6);
+			}
+
+			@keyframes name {
+				from {
+					transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+				}
+
+				to {
+					transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+				}
+			}
+			@keyframes dong{
+				from{
+					transform: translatez(100px);
+				}
+				to{
+					transform: translatez(150px);
+				}
+			}
+
+			.cc {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				left: 0;
+				right: 0;
+				background-color: rgba(232, 222, 45, 0.6);
+				margin-top: -50px;
+				margin-left: -50px;
+			}
+
+			.qian1 {
+				transform: translateZ(100px);
+				background-color: rgba(23, 22, 4, 0.6);
+				animation: dong 6s infinite linear;
+			}
+
+
+			.hou1 {
+				transform: rotateY(180deg) translateZ(100px);
+				background-color: rgba(23, 122, 56, 0.6);
+				animation: dong1 6s infinite linear;
+			}
+			@keyframes dong1{
+				from{
+					transform: rotateY(180deg) translatez(100px);
+				}
+				to{
+					transform: rotateY(180deg) translatez(150px);
+				}
+			}
+
+
+			.zuo1 {
+				transform: rotateY(90deg) translateZ(100px);
+				background-color: rgba(223, 122, 74, 0.6);
+				animation: dong2 6s infinite linear;
+
+			}
+			@keyframes dong2{
+				from{
+					transform: rotateY(90deg) translatez(100px);
+				}
+				to{
+					transform: rotateY(90deg) translatez(150px);
+				}
+			}
+
+			.you1 {
+				transform: rotateY(270deg) translateZ(100px);
+				background-color: rgba(13, 22, 254, 0.6);
+				animation: dong3 6s infinite linear;
+			}
+			@keyframes dong3{
+				from{
+					transform: rotateY(270deg) translatez(100px);
+				}
+				to{
+					transform: rotateY(270deg) translatez(150px);
+				}
+			}
+			.shang1 {
+				transform: rotateX(90deg) translateZ(100px);
+				background-color: rgba(223, 12, 144, 0.9);
+				animation: dong4 6s infinite linear;
+			}
+			@keyframes dong4{
+				from{
+					transform: rotateX(90deg) translatez(100px);
+				}
+				to{
+					transform: rotateX(90deg) translatez(150px);
+				}
+			}
+			.xia1 {
+				transform: rotateX(270deg) translateZ(100px);
+				background-color: rgba(23, 252, 144, 0.6);
+				animation: dong5 6s infinite linear;
+			}
+			@keyframes dong5{
+				from{
+					transform: rotateX(270deg) translatez(100px);
+				}
+				to{
+					transform: rotateX(270deg) translatez(150px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="aa">
+			<div class="bb  qian"></div>
+			<div class="cc qian1"></div>
+
+			<div class="bb  hou"></div>
+			<div class="cc hou1"></div>
+
+			<div class="bb  zuo"></div>
+			<div class="cc zuo1"></div>
+
+			<div class="bb  you"></div>
+			<div class="cc you1"></div>
+
+			<div class="bb  shang"></div>
+			<div class="cc shang1"></div>
+
+			<div class="bb  xia"></div>
+			<div class="cc xia1"></div>
+
+		</div>
+	</body>
+</html>
