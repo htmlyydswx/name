@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h2{
+            border-bottom: 8px solid greenyellow;
+			border-radius: 40%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.write('<h2>第一题</h2>');
+        {		let p = document.createElement('p');
+                input1 = document.createElement('input'),
+                input2 = document.createElement('input'),
+                btn = document.createElement('button'),
+                span = document.createElement('span');
+            btn.innerHTML = '比较';
+            p.appendChild(input1);
+            p.appendChild(input2);
+            p.appendChild(btn);
+            p.appendChild(span);
+            document.body.appendChild(p);
+            btn.onclick = function(){
+                if(typeof a === 'number' && typeof b === 'number'){
+                    alert('请输入数字！');
+                }else{
+                    let a = +input1.value,
+                    b = +input2.value;
+                    span.innerHTML = a;
+                    if(a > b){
+                        span.innerHTML += '大';
+                }else if (a < b){
+                    span.innerHTML += '小';
+                }else {
+                    span.innerHTML += '等';
+                }
+                span.innerHTML += '于' + b;
+                }
+            }
+        }
+
+			document.write('<h2>第二题</h2>');
+			let a=Number(prompt('（第二题）请输入数字类型a的值'));
+			document.write(`a的值是${a},`)
+			if(a%5===0){
+				document.write(`可以被5整除。`);
+			}else{
+				document.write(`不可以被5整除。`);
+			}
+        
+        document.write('<h2>第三题</h2>');
+        {
+            let str = '100以内的偶数：';
+            for(let i = 0; i < 100; i++){
+                if(i % 2 === 0){
+                    str += i + ' ';
+                }
+            }
+            document.write(str);
+        }
+        
+        document.write('<h2>第四题</h2>');
+        {
+            let str = '100以内能被7整除的数：',
+                i = 0;
+            while(i++ < 100){
+                if(i % 7 === 0){
+                    str += i + ' ';
+                }
+            }
+            document.write(str);
+        }
+    
+			document.write('<h2>第五题</h2>');
+			let c=Number(prompt('（第五题）请输入数字类型a的值'));
+			let v=Number(prompt('（第五题）请输入数字类型b的值'));
+			let n=Number(prompt('（第五题）请输入数字类型c的值'));
+			document.write('a的值是'+c+','+'b的值是'+v+','+'c的值是'+n+','+'最大的值是：');
+			if(c>v && c>n){
+				document.write(`a的值为${c}`)
+			}else if(v>c && v>n){
+				document.write(`b的值为${v}`)
+			}else{
+				document.write(`c的值为${n}`)
+			}
+
+
+        document.write('<h2>第六题</h2>');
+        {
+            let odd = '100以内奇数：',
+                even = '100以内偶数：';
+            for(let i = 0; i < 100; i++){
+                if(i % 2 !== 0){
+                    odd += i + ' ';
+                }else {
+                    even += i + ' ';
+                }
+            }
+            document.write(odd + '<br>');
+            document.write(even);
+        }
+
+			document.write('<h2>题七</h2>');
+			let achearr=[1,2,3];
+			let bchearr=[];
+			for(let i=0;i<=achearr.length;i++){
+				bchearr.push(achearr.pop());
+			}
+			bchearr.push(achearr[0]);
+			document.write(bchearr);
+    </script>
+</body>
+</html>
